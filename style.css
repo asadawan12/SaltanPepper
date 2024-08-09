@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+nav img{
+    height: 75px;
+    margin-left: 60px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.buttons{
+    display: flex;
+    margin-right: 40px;
+    gap: 10px;
+}
+.buttons button{
+    padding: 12px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.buttons button:nth-child(1){
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.buttons button:nth-child(2){
+    background-color: #ED3F3C;
+    border: 1px solid black;
+    color: white;
+    width: 150px;
+}
+button i{
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: red;
+    padding: 6px 7px;
+    margin-left: 7px;
+}
+.sliders{
+    width: 100%;
+    height: 620px;
+    /* background-image: url(imges/slide-1.webp); */
+    background-position: center;
+    background-size: 100% 100%;
+    animation-name:myslide;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide {
+    0%{background-image: url(imges/slide-1.webp);}
+    35%{background-image: url(imges/slide-2.webp);}
+    75%{background-image: url(imges/slide-3.webp);}
+    100%{background-image: url(imges/slide-4.webp);}
+}
